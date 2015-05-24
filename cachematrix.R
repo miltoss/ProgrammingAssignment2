@@ -1,10 +1,12 @@
-## By miltoss
+## By miltoss (Miltiadis Sarakinos)
 
 ## I adapted the code from the example with the vector a bit
 ## to fit my style of programming and to make the code a 
 ## bit more readable.
 
-## To test the code look at the following comment block
+## To test the code look at the following comment block or
+## even better run 
+## https://github.com/miltoss/ProgrammingAssignment2/blob/master/TestCacheMatrix.R
 
 ##--------------------------------------------------------------
 ## This block code for testing the functions.
@@ -62,7 +64,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'. Checks if the inverse
@@ -74,7 +75,7 @@ cacheSolve <- function(x, ...) {
     
     # If the cache is not null, return its content
     if(!is.null(the_inverse)) {
-        message("getting cached data")
+        message("Getting cached data")
         return(the_inverse)
     }
     
